@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 filepath=$3     #取文件原始路径，如果是单文件则为/Download/a.mp4，如果是文件夹则该值为文件夹内第一个文件比如/Download/a/1.mp4
 path=${3%/*}     #取文件根路径，如把/Download/a/1.mp4变成/Download/a
-downloadpath='/root/aDown'    #Aria2下载目录
+downloadpath='/home/aDown'    #Aria2下载目录
 name='gd' #配置Rclone时的name
 folder='/'     #网盘里的文件夹，如果是根目录直接留空
 MinSize='10k'     #限制最低上传大小，默认10k，BT下载时可防止上传其他无用文件。会删除文件，谨慎设置。
