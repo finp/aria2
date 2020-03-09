@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 filepath=$3     #取文件原始路径，如果是单文件则为/Download/a.mp4，如果是文件夹则该值为文件夹内第一个文件比如/Download/a/1.mp4
 path=${3%/*}     #取文件根路径，如把/Download/a/1.mp4变成/Download/a
 downloadpath='/root/aDown'    #Aria2下载目录
