@@ -18,7 +18,7 @@ if [ "$path" = "$downloadpath" ] && [ $2 -eq 1 ]    #如果下载的是单个文
 elif [ "$path" != "$downloadpath" ]    #如果下载的是文件夹
     then
     while [[ "`ls -A "$path/"`" != "" ]]; do
-    rclone move -v "$path" ${name}:/${folder}/"${path##*/}" --min-size $MinSize --max-size $MaxSize --delete-empty-src-dir
+    rclone move -v "$path" ${name}:/${folder}/"${path##*/}" --min-size $MinSize --max-size $MaxSize --delete-empty-src-dirs
     rclone delete -v "$path" --max-size $MinSize    #删除多余的文件
     rclone rmdirs -v "$downloadpath" --leave-root    #删除空目录，--delete-empty-src-dirs 参数已实现，加上无所谓。
     done
