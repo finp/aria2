@@ -4,7 +4,7 @@ path=${3%/*}     #取文件根路径，如把/Download/a/1.mp4变成/Download/a
 downloadpath='/home/aDown'    #Aria2下载目录
 name='gd' #配置Rclone时的name
 folder=''     #网盘里的文件夹，如果是根目录直接留空
-MinSize='10k'     #限制最低上传大小，默认10k，BT下载时可防止上传其他无用文件。会删除文件，谨慎设置。
+MinSize='10m'     #限制最低上传大小，默认10k，BT下载时可防止上传其他无用文件。会删除文件，谨慎设置。
 MaxSize='750G'     #限制最高文件大小，OneDrive默认15G上传限制。
 
 if [ $2 -eq 0 ]; then exit 0; fi
