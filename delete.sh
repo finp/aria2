@@ -14,8 +14,8 @@ echo -e "$(date +"%m/%d %H:%M:%S") ${INFO} Download error or stop, start deletin
 if [ $2 -eq 0 ]; then
     exit 0
 elif [ -e "${FILE_PATH}.aria2" ]; then
-    rm -vf "${FILE_PATH}.aria2" "${FILE_PATH}"
+    rm -vf "${FILE_PATH}.aria2" "${FILE_PATH}" "${FILE_PATH}.torrent"
 elif [ -e "${TOP_PATH}.aria2" ]; then
-    rm -vrf "${TOP_PATH}.aria2" "${TOP_PATH}"
+    rm -vrf "${TOP_PATH}.aria2" "${TOP_PATH}" "${FILE_PATH}.torrent"
 fi
 find "${DOWNLOAD_PATH}" ! -path "${DOWNLOAD_PATH}" -depth -type d -empty -exec rm -vrf {} \;
