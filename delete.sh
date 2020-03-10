@@ -1,15 +1,6 @@
 #!/usr/bin/env bash
-#=====================================================
-# https://github.com/P3TERX/aria2.conf
-# File name：delete.sh
-# Description: Delete files after Aria2 download error
-# Lisence: MIT
-# Version: 2.0
-# Author: P3TERX
-# Blog: https://p3terx.com
-#=====================================================
 
-DOWNLOAD_PATH='/downloads'
+DOWNLOAD_PATH='/home/aDown'
 
 FILE_PATH=$3
 REMOVE_DOWNLOAD_PATH=${FILE_PATH#${DOWNLOAD_PATH}/}
