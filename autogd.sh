@@ -34,7 +34,7 @@ DRIVE_PATH=''
 #INCLUDE_FILE='mp4,mkv,rmvb,mov,wmv,m3u8,avi,flv,mpg,mpeg,zip,'
 
 # 排除文件类型，仅 BT 多文件下载时有效，用于过滤无用文件。排除的文件将被删除，不会上传。
-EXCLUDE_FILE='html,url,lnk,txt,jpg,png'
+EXCLUDE_FILE='html,url,lnk,txt,jpg,png,URL,TXT'
 
 ## 高级设置 ##
 
